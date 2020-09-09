@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    {% block head %}
+    <link rel= "stylesheet" type= "text/css" href="{{ url_for('static', filename='styles/base.css') }}">
+    <title>{{ title }}</title>
+    {% endblock %}
+</head>
+<body>
+    <div id="page_header">This is a demo app. Hello!</div> 
+    <div id="main_page">
+        <h1>{{title}}</h1>
+        <div id="page_content">
+            {% block content %}
+            {{ content }}
+            {% endblock %}
+        </div>
+    </div>
+    <footer>
+        {% block footer %}
+        information like copyright, etc. goes here.
+        {% endblock %}
+    </footer> 
+
+</body>
