@@ -10,9 +10,14 @@
     <div id="main_page">
         <h1>{{title}}</h1>
         <div id="page_content">
-            {% block content %}
-            {{ content }}
-            {% endblock %}
+        {% block content %}
+            <p>blah</p>
+            {% for candidate in candidates %}
+            <p>{{candidate.full_name}} is running or has run for the following races: 
+                {{ candidate.race_names|join(', '|safe) }}
+            </p>
+            {% endfor %}
+        {% endblock %}
         </div>
     </div>
     <footer>
