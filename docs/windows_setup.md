@@ -1,4 +1,6 @@
+first do this to get the line endings right 
 
+https://medium.com/@csmunuku/windows-and-linux-eol-sequence-configure-vs-code-and-git-37be98ef71df
 
 do the stuff in the first answer, but specifying python3 for the last one
 https://stackoverflow.com/questions/55422929/e-unable-to-locate-package-python-pip-on-ubuntu-18-04
