@@ -1,0 +1,21 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+
+    command: /var/app/run.sh --processes 1
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./:/var/app
+    environment:
+      - ORIGIN_DOMAIN=localhost:3000
+  postgres:
+    image: postgres
+    restart: always
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
