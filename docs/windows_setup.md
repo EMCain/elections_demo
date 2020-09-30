@@ -21,3 +21,6 @@ https://medium.com/@joaoh82/setting-up-docker-toolbox-for-windows-home-10-and-ws
 ```
 
 got as far as setting the $PATH and now I need to do "Configure WSL to Connect to Docker for Windows"
+
+had to do this - "docker-machine not found" 
+https://github.com/docker/machine/releases
